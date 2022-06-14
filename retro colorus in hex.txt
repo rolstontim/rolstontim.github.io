@@ -1,0 +1,18 @@
+Retro Colours in Hex (light to dark):
+
+Oranges:
+#eda96c
+#ea713c
+#d76735
+#d93f27
+
+Blues:
+#83a8a0
+#2b8b99
+#1f6e8d
+#172a54
+
+Whites:
+#f2d8b3
+#f4ddb3
+#eda96c

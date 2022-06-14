@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/058763f591.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css"/>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body style="margin:0">
+    <section class="hero">
+        <nav>
+            <ul>
+                <li><a class="about-button" href="#about-me">About me</a></li>
+                <li><a class="projects-button" href="#projects">Projects</a></li>
+                <li><a class="contact-button" href="#contact">Contact</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li><a class="icon" href="https://github.com/rolstontim"><i class="fa-brands fa-github"></i></a></li>
+                <li><a class="icon" href="https://www.linkedin.com/in/tim-rolston-422718209/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </nav>
+            <div class="hero-text">
+                <h1>Tim Rolston<span class="blink">_</span></h1>
+                <p>Computer Science Student</p>
+            </div>
+        </div>      
+        
+
+    </section>
+    <section class="sub-section" id="about-me">
+        <div class="information">
+            <h2>About Me</h2>
+            <p>Hi my name is Tim Rolston and this is my web portfolio. I am a computer science student currently studying at the University of Victoria who loves to explore the creative side of developing and coding. 
+                Some of my personal interests in the field include machine learnching, software development, and quantum computing. In my free time I am usually camping and exploring outside while enjoying a good cup of coffee. 
+                Here you will find some of the previous professional work I've done as well as some of my personal projects that I work on. If you click on my portrait to the right you will
+                find a work in progress portfolio I am building using Wordpress. I hope you enjoy :) 
+            </p>
+
+            
+        </div>
+        <div class="portrait-container">
+            <a class="my-website" href="https://rolstontim.com/"><img class="portrait" src="src/images/portrait-me.jpg" alt="Photo of Tim Rolston"/></a>
+
+        </div>
+    </section>
+    <section class="sub-section-alt" id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img class="project-image" src="src/images/wireframe.png" alt="Project One Image"/>
+                <h3>Wireframe mockup</h3>
+                <p class="project-subtext">This is an interactive wireframe that I created for The Glenshiel withAdobe XD as an idea for updating their current website</p>
+                <hr/>
+                <p class="project-subtext"><a class="project-link" href="https://xd.adobe.com/view/645621f5-2b2a-4464-8c18-f0ed388c3477-3105/?fullscreen">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/virtual-tour.png" alt="Project Two Image"/>
+                <h3>Virtual Tour</h3>
+                <p class="project-subtext">This was a project I had while working with The Glenshiel where I was tasked to create a virtual tour of their residence</p>
+                <hr/>
+                <p class="project-subtext"><a class="project-link" href="https://tour.klapty.com/he40uciGEm/?deeplinking=true&startscene=0&startactions=lookat(169.43,9.25,90,0,0);">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="src/images/art.jpg" alt="Project Three Image"/>
+                <h3>Personal art portfolio</h3>
+                <p class="project-subtext">This is a simple art portfolio that showcases some of my recent drawings and photography that I have done</p>
+                <hr/>
+                <p class="project-subtext"><a class="project-link" href="https://rolstontim.myportfolio.com/rolstontimportfolio">View here</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="form-page">
+            <h2>Contact</h2>
+            <form action="https://formsubmit.co/rolston.tim@gmail.com" method="POST">
+            <div class="form">
+                <div class="top-form">
+                    <div class="inner-form">
+                        <div class="label">name</div>
+                        <input type="text" placeholder="your name">
+                    </div>
+                    <div class="inner-form">
+                        <div class="label">email*</div>
+                        <input type="text" placeholder="examplemail@gmail.com" required>
+                    </div>
+                    <div class="inner-form">
+                        <div class="label">phone</div>
+                        <input type="text" placeholder="your phone number">
+                    </div>
+                </div>
+                <div class="middle-form">
+                    <div class="inner-form">
+                        <div class="label">subject</div>
+                        <input type="text" placeholder="subject">
+                    </div>
+                </div>
+                <div class="bottom-form">
+                    <div class="inner-form">
+                        <div class="label">message*</div>
+                        <textarea placeholder="your message" required></textarea>
+                    </div>
+                </div>
+                <div class="send-button"><button type="submit">send form</button></div>
+            </div>
+            </form>
+        </div>
+    </section>
+
+    
+    <script src="src/app.js"></script>
+</body>
+</html>
