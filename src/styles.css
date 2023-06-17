@@ -16,11 +16,17 @@ section {
     background-color: #f2d8b3;
     background-image: url(images/top-page-design.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     height: 100vh;
     color: #172a54;
     font-size: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+        background-size: contain;
+    }
 }
 
 .logo {
@@ -48,15 +54,15 @@ nav {
 }
 
 .about-button:hover {
-    color: #d76735;
+    color: #eda96c;
 }
 
 .projects-button:hover {
-    color: #d76735;
+    color: #eda96c;
 }
 
 .contact-button:hover {
-    color: #d76735;
+    color: #eda96c;
 }
 
 ul {
@@ -165,12 +171,6 @@ p {
     padding-bottom: 100px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
 .portrait-container {
     display: flex;
@@ -179,8 +179,12 @@ p {
 }
 
 .portrait {
+
+
+    object-fit: fill;
     width: 300px;
-    border-radius: 150px;
+    height: 300px;
+    border-radius: 500px;
     box-shadow: 5px 5px 20px #1f6e8d;
     transition: all 0.3s;
 }
@@ -196,27 +200,38 @@ p {
 .projects {
     display: flex;
     justify-content: space-around;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
 }
 
 .project-card {
-    background-color: #83a8a0;
+    resize: none;
+    background-color: #1f6e8d;
     width: 300px;
     height: 500px;
     box-shadow: 5px 5px 15px #1f6e8d;
+    margin: 10px;
 }
+
 
 .project-image {
     margin-top: 12.5%;
     height: 50%;
     width: 75%;
     object-fit: cover;
-    
 
 }
 
 hr {
-    
-    border-color: #eda96c;
+    border-top: 2px solid;
+    border-color: #d76735;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -232,7 +247,7 @@ hr {
 
 a{
     text-decoration: none;
-    color: #eda96c;
+    color: #f2d8b3;
 }
 
 .contact-section {
