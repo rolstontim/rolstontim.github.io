@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQRYWDC8C3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FQRYWDC8C3');
+    </script>
     <script src="https://kit.fontawesome.com/058763f591.js" crossorigin="anonymous"></script>
+    <script>
+        history.scrollRestoration = "manual";
+    
+        const removeAnchorFormURL = () => {
+            setTimeout(() => {
+            window.history.replaceState({}, "", window.location.href.split("#")[0]);
+            }, 100);
+        };
+    </script>
     <link rel="stylesheet" href="src/styles.css"/>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,12 +28,13 @@
     <title>Portfolio</title>
 </head>
 <body style="margin:0">
+
     <section class="hero">
         <nav>
             <ul>
-                <li><a class="about-button" href="#about-me">about me</a></li>
-                <li><a class="projects-button" href="#projects">projects</a></li>
-                <li><a class="contact-button" href="#contact">contact</a></li>
+                <li><a onclick="removeAnchorFromURL()" class="about-button" href="#about-me">about me</a></li>
+                <li><a onclick="removeAnchorFromURL()" class="projects-button" href="#projects">projects</a></li>
+                <li><a onclick="removeAnchorFromURL()" class="contact-button" href="#contact">contact</a></li>
             </ul>
             <ul class="social-icons">
                 <li><a class="icon" href="https://github.com/rolstontim"><i class="fa-brands fa-github"></i></a></li>
