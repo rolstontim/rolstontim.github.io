@@ -62,3 +62,60 @@ footer {
   background: #f1f1f1;
   margin-top: 2rem;
 }
+
+/* Typing Effect */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #004643, #abd1c6);
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content {
+  font-family: 'Courier New', monospace; /* Monospaced font for typing effect */
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden; /* Hide content beyond the width */
+  border-right: 3px solid transparent;
+}
+
+.blinking-cursor {
+  font-size: 3rem;
+  animation: blink 0.7s steps(2, start) infinite;
+  color: #ffffff;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #f4f4f4;
+}
+
+/* Animations */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
